@@ -25,15 +25,14 @@ header {
     align-items: center;
     background: radial-gradient(circle at top, #667eea, #764ba2);
     text-align: center;
-    color: white;
 }
 
 header h1 {
-    font-size: 36px;
+    font-size: 40px;
 }
 
 header p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* Navbar */
@@ -121,6 +120,11 @@ h2 {
     padding: 25px;
     border-radius: 20px;
     backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
 }
 
 /* Projects */
@@ -142,6 +146,25 @@ h2 {
 .project-card:hover {
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 0 30px rgba(255,107,107,0.6);
+}
+
+/* Education Grid */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Education Images */
+.edu-img {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.edu-img:hover {
+    transform: scale(1.05);
 }
 
 /* Button */
@@ -167,4 +190,4 @@ footer {
     padding: 40px;
     margin-top: 60px;
     background: rgba(0,0,0,0.4);
-}ruturajkharatportfolio.com
+}
