@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ruturajkharat.github.io/portfolio/sitemap.xml
