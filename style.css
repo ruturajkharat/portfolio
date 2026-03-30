@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+}
+
+/* Header */
+header {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #667eea, #764ba2);
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(12px);
+    background: rgba(0,0,0,0.5);
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+nav a {
+    color: #fff;
+    margin: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+/* Navbar underline animation */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ffd166;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Sections */
+section {
+    width: 75%;
+    margin: 80px auto;
+    padding: 50px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 40px rgba(0,0,0,0.4);
+    transition: 0.4s;
+}
+
+section:hover {
+    transform: translateY(-8px);
+}
+
+/* Section Titles */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    background: linear-gradient(90deg,#ffd166,#ff6b6b);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Skills */
+.skill {
+    margin: 25px 0;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 12px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+}
+
+.skill-fill {
+    height: 12px;
+    border-radius: 20px;
+    background: linear-gradient(90deg,#ffd166,#ff6b6b);
+}
+
+/* Cards */
+.card {
+    background: rgba(255,255,255,0.12);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* Projects */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(135deg,#ff6b6b,#ffd166);
+    color: white;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 30px rgba(255,107,107,0.6);
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: linear-gradient(90deg,#ff6b6b,#ffd166);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ffd166;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    margin-top: 60px;
+    background: rgba(0,0,0,0.4);
+}ruturajkharatportfolio.com
